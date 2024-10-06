@@ -1,0 +1,45 @@
+Pattern 1 ./main 8 1
+Process 1 (23401) beginning
+Process 2 (23402) beginning
+Process 3 (23403) beginning
+Process 5 (23405) beginning
+Process 4 (23404) beginning
+Process 6 (23406) beginning
+Process 7 (23407) beginning
+Process 8 (23408) beginning
+Process 2 (23402) exiting
+Process 1 (23401) exiting
+Process 3 (23403) exiting
+Process 5 (23405) exiting
+Process 4 (23404) exiting
+Process 6 (23406) exiting
+Process 8 (23408) exiting
+Process 7 (23407) exiting
+
+Pattern 2 ./main 8 2 
+Process 1 (26434) beginning
+Process 1 (26434) creating Process 2
+Process 2 (26448) beginning
+Process 2 (26448) creating Process 3
+Process 3 (26590) beginning
+Process 3 (26590) creating Process 4
+Process 4 (26663) beginning
+Process 4 (26663) creating Process 5
+Process 5 (26734) beginning
+Process 5 (26734) creating Process 6
+Process 6 (26817) beginning
+Process 6 (26817) creating Process 7
+Process 7 (26890) beginning
+Process 7 (26890) creating Process 8
+Process 8 (26952) beginning
+Process 8 (26952) creating Process 9
+Process 9 (26957) beginning
+Process 9 (26957) exiting
+Process 8 (26952) exiting
+Process 7 (26890) exiting
+Process 6 (26817) exiting
+Process 5 (26734) exiting
+Process 4 (26663) exiting
+Process 3 (26590) exiting
+Process 2 (26448) exiting
+Process 1 (26434) exiting
