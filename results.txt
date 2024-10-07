@@ -1,45 +1,195 @@
-Pattern 1 ./main 8 1
-Process 1 (23401) beginning
-Process 2 (23402) beginning
-Process 3 (23403) beginning
-Process 5 (23405) beginning
-Process 4 (23404) beginning
-Process 6 (23406) beginning
-Process 7 (23407) beginning
-Process 8 (23408) beginning
-Process 2 (23402) exiting
-Process 1 (23401) exiting
-Process 3 (23403) exiting
-Process 5 (23405) exiting
-Process 4 (23404) exiting
-Process 6 (23406) exiting
-Process 8 (23408) exiting
-Process 7 (23407) exiting
+Pattern 1(Run 1 ./forky 8 1)
+** Pattern 1: creating 8 processes **
+Parent: created child 1 (pid 40364)
+Process 1 (40364) beginning
+Process 1 (pid 40364): sleeping for 2 seconds
+Parent: created child 2 (pid 40365)
+Process 2 (40365) beginning
+Process 2 (pid 40365): sleeping for 2 seconds
+Parent: created child 3 (pid 40366)
+Process 3 (40366) beginning
+Process 3 (pid 40366): sleeping for 2 seconds
+Parent: created child 4 (pid 40367)
+Process 4 (40367) beginning
+Parent: created child 5 (pid 40368)
+Process 4 (pid 40367): sleeping for 2 seconds
+Process 5 (40368) beginning
+Process 5 (pid 40368): sleeping for 2 seconds
+Parent: created child 6 (pid 40369)
+Process 6 (40369) beginning
+Parent: created child 7 (pid 40370)
+Process 6 (pid 40369): sleeping for 2 seconds
+Process 7 (40370) beginning
+Process 7 (pid 40370): sleeping for 2 seconds
+Parent: created child 8 (pid 40371)
+Process 8 (40371) beginning
+Process 8 (pid 40371): sleeping for 2 seconds
+Process 1 (pid 40364): exiting.
+Process 2 (pid 40365): exiting.
+Process 3 (pid 40366): exiting.
+Process 4 (pid 40367): exiting.
+Process 5 (pid 40368): exiting.
+Process 7 (pid 40370): exiting.
+Process 6 (pid 40369): exiting.
+Process 8 (pid 40371): exiting.
+** Pattern 1: All children have exited **
 
-Pattern 2 ./main 8 2 
-Process 1 (26434) beginning
-Process 1 (26434) creating Process 2
-Process 2 (26448) beginning
-Process 2 (26448) creating Process 3
-Process 3 (26590) beginning
-Process 3 (26590) creating Process 4
-Process 4 (26663) beginning
-Process 4 (26663) creating Process 5
-Process 5 (26734) beginning
-Process 5 (26734) creating Process 6
-Process 6 (26817) beginning
-Process 6 (26817) creating Process 7
-Process 7 (26890) beginning
-Process 7 (26890) creating Process 8
-Process 8 (26952) beginning
-Process 8 (26952) creating Process 9
-Process 9 (26957) beginning
-Process 9 (26957) exiting
-Process 8 (26952) exiting
-Process 7 (26890) exiting
-Process 6 (26817) exiting
-Process 5 (26734) exiting
-Process 4 (26663) exiting
-Process 3 (26590) exiting
-Process 2 (26448) exiting
-Process 1 (26434) exiting
+Pattern 1 (Run 2 ./forky 15 1)
+** Pattern 1: creating 15 processes **
+Parent: created child 1 (pid 41080)
+Process 1 (41080) beginning
+Process 1 (pid 41080): sleeping for 6 seconds
+Parent: created child 2 (pid 41081)
+Process 2 (41081) beginning
+Parent: created child 3 (pid 41082)
+Process 2 (pid 41081): sleeping for 6 seconds
+Process 3 (41082) beginning
+Process 3 (pid 41082): sleeping for 6 seconds
+Parent: created child 4 (pid 41083)
+Process 4 (41083) beginning
+Process 4 (pid 41083): sleeping for 6 seconds
+Parent: created child 5 (pid 41084)
+Process 5 (41084) beginning
+Parent: created child 6 (pid 41085)
+Process 6 (41085) beginning
+Process 5 (pid 41084): sleeping for 6 seconds
+Process 6 (pid 41085): sleeping for 6 seconds
+Parent: created child 7 (pid 41086)
+Process 7 (41086) beginning
+Process 7 (pid 41086): sleeping for 6 seconds
+Parent: created child 8 (pid 41087)
+Process 8 (41087) beginning
+Parent: created child 9 (pid 41088)
+Process 8 (pid 41087): sleeping for 6 seconds
+Process 9 (41088) beginning
+Process 9 (pid 41088): sleeping for 6 seconds
+Parent: created child 10 (pid 41089)
+Process 10 (41089) beginning
+Process 10 (pid 41089): sleeping for 6 seconds
+Parent: created child 11 (pid 41090)
+Process 11 (41090) beginning
+Process 11 (pid 41090): sleeping for 6 seconds
+Parent: created child 12 (pid 41091)
+Process 12 (41091) beginning
+Process 12 (pid 41091): sleeping for 6 seconds
+Parent: created child 13 (pid 41092)
+Process 13 (41092) beginning
+Process 13 (pid 41092): sleeping for 6 seconds
+Parent: created child 14 (pid 41093)
+Process 14 (41093) beginning
+Process 14 (pid 41093): sleeping for 6 seconds
+Parent: created child 15 (pid 41094)
+Process 15 (41094) beginning
+Process 15 (pid 41094): sleeping for 6 seconds
+Process 1 (pid 41080): exiting.
+Process 2 (pid 41081): exiting.
+Process 5 (pid 41084): exiting.
+Process 8 (pid 41087): exiting.
+Process 3 (pid 41082): exiting.
+Process 4 (pid 41083): exiting.
+Process 7 (pid 41086): exiting.
+Process 9 (pid 41088): exiting.
+Process 10 (pid 41089): exiting.
+Process 6 (pid 41085): exiting.
+Process 11 (pid 41090): exiting.
+Process 13 (pid 41092): exiting.
+Process 12 (pid 41091): exiting.
+Process 14 (pid 41093): exiting.
+Process 15 (pid 41094): exiting.
+** Pattern 1: All children have exited **
+
+Pattern 2 (Run 1 ./forky 8 2)
+** Pattern 2: creating 8 processes ** 
+Child 1 (pid 39606): starting
+Child 1 (pid 39606), waiting for child 2 (pid 39607)
+Child 1 (pid 39607), sleeping 8 seconds after creating child 2 (pid 39607)
+Child 2 (pid 39607): starting
+Child 2 (pid 39607), waiting for child 3 (pid 39699)
+Child 2 (pid 39699), sleeping 6 seconds after creating child 3 (pid 39699)
+Child 3 (pid 39699): starting
+Child 3 (pid 39699), waiting for child 4 (pid 39763)
+Child 3 (pid 39763), sleeping 4 seconds after creating child 4 (pid 39763)
+Child 4 (pid 39763): starting
+Child 4 (pid 39763), waiting for child 5 (pid 39816)
+Child 4 (pid 39816), sleeping 8 seconds after creating child 5 (pid 39816)
+Child 5 (pid 39816): starting
+Child 5 (pid 39816), waiting for child 6 (pid 39926)
+Child 5 (pid 39926), sleeping 2 seconds after creating child 6 (pid 39926)
+Child 6 (pid 39926): starting
+Child 6 (pid 39926), waiting for child 7 (pid 39941)
+Child 6 (pid 39941), sleeping 4 seconds after creating child 7 (pid 39941)
+Child 7 (pid 39941): starting
+Child 7 (pid 39941), waiting for child 8 (pid 40003)
+Child 7 (pid 40003), sleeping 1 seconds after creating child 8 (pid 40003)
+Child 8 (pid 40003): starting
+Child 8 (pid 40003) [no children created] sleeping 5 seconds
+Child 8 (pid 40003) exiting.
+Child 7 (pid 39941) exiting.
+Child 6 (pid 39926) exiting.
+Child 5 (pid 39816) exiting.
+Child 4 (pid 39763) exiting.
+Child 3 (pid 39699) exiting.
+Child 2 (pid 39607) exiting.
+Child 1 (pid 39606) exiting.
+
+Pattern 2 (Run 2 ./forky 15 2)
+** Pattern 2: creating 15 processes **
+Child 1 (pid 41420): starting
+Child 1 (pid 41420), waiting for child 2 (pid 41421)
+Child 1 (pid 41421), sleeping 8 seconds after creating child 2 (pid 41421)
+Child 2 (pid 41421): starting
+Child 2 (pid 41421), waiting for child 3 (pid 41517)
+Child 2 (pid 41517), sleeping 1 seconds after creating child 3 (pid 41517)
+Child 3 (pid 41517): starting
+Child 3 (pid 41517), waiting for child 4 (pid 41522)
+Child 3 (pid 41522), sleeping 6 seconds after creating child 4 (pid 41522)
+Child 4 (pid 41522): starting
+Child 4 (pid 41522), waiting for child 5 (pid 41601)
+Child 4 (pid 41601), sleeping 8 seconds after creating child 5 (pid 41601)
+Child 5 (pid 41601): starting
+Child 5 (pid 41601), waiting for child 6 (pid 41696)
+Child 5 (pid 41696), sleeping 8 seconds after creating child 6 (pid 41696)
+Child 6 (pid 41696): starting
+Child 6 (pid 41696), waiting for child 7 (pid 41812)
+Child 6 (pid 41812), sleeping 7 seconds after creating child 7 (pid 41812)
+Child 7 (pid 41812): starting
+Child 7 (pid 41812), waiting for child 8 (pid 41891)
+Child 7 (pid 41891), sleeping 1 seconds after creating child 8 (pid 41891)
+Child 8 (pid 41891): starting
+Child 8 (pid 41891), waiting for child 9 (pid 41902)
+Child 8 (pid 41902), sleeping 6 seconds after creating child 9 (pid 41902)
+Child 9 (pid 41902): starting
+Child 9 (pid 41902), waiting for child 10 (pid 42002)
+Child 9 (pid 42002), sleeping 8 seconds after creating child 10 (pid 42002)
+Child 10 (pid 42002): starting
+Child 10 (pid 42002), waiting for child 11 (pid 42122)
+Child 10 (pid 42122), sleeping 8 seconds after creating child 11 (pid 42122)
+Child 11 (pid 42122): starting
+Child 11 (pid 42122), waiting for child 12 (pid 42268)
+Child 11 (pid 42268), sleeping 2 seconds after creating child 12 (pid 42268)
+Child 12 (pid 42268): starting
+Child 12 (pid 42268), waiting for child 13 (pid 42283)
+Child 12 (pid 42283), sleeping 4 seconds after creating child 13 (pid 42283)
+Child 13 (pid 42283): starting
+Child 13 (pid 42283), waiting for child 14 (pid 42363)
+Child 13 (pid 42363), sleeping 2 seconds after creating child 14 (pid 42363)
+Child 14 (pid 42363): starting
+Child 14 (pid 42363), waiting for child 15 (pid 42379)
+Child 14 (pid 42379), sleeping 7 seconds after creating child 15 (pid 42379)
+Child 15 (pid 42379): starting
+Child 15 (pid 42379) [no children created] sleeping 8 seconds
+Child 15 (pid 42379) exiting.
+Child 14 (pid 42363) exiting.
+Child 13 (pid 42283) exiting.
+Child 12 (pid 42268) exiting.
+Child 11 (pid 42122) exiting.
+Child 10 (pid 42002) exiting.
+Child 9 (pid 41902) exiting.
+Child 8 (pid 41891) exiting.
+Child 7 (pid 41812) exiting.
+Child 6 (pid 41696) exiting.
+Child 5 (pid 41601) exiting.
+Child 4 (pid 41522) exiting.
+Child 3 (pid 41517) exiting.
+Child 2 (pid 41421) exiting.
+Child 1 (pid 41420) exiting.

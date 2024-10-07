@@ -1,5 +1,5 @@
-fib: main.c
-	gcc -o main main.c forky.c
+forky: forky.c
+	gcc -o forky forky.c patterns.c
 
 clean:
-	rm main
+	rm forky
