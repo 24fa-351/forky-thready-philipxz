@@ -11,9 +11,9 @@ void pattern1(int processes) {
     fprintf(stderr, "** Pattern 1: creating %d processes **\n", processes);
     for (int ix = 1; ix <= processes; ix++) {
         pid_t child_pid = fork();
+        int sleep_time = rand() % 8 + 1;
         if (child_pid == 0) {  // Child Process
             fprintf(stderr, "Process %d (%d) beginning\n", ix, getpid());
-            int sleep_time = rand() % 8 + 1;
             fprintf(stderr, "Process %d (pid %d): sleeping for %d seconds\n",
                     ix, getpid(), sleep_time);
             sleep(sleep_time);
