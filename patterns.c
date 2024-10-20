@@ -48,7 +48,7 @@ void pattern2(int processes) {
                 fprintf(stderr,
                         "Child %d (pid %d), sleeping %d seconds after creating "
                         "child %d (pid %d)\n",
-                        ix, getpid(), sleep_time, ix + 1, getpid());
+                        ix, pid, sleep_time, ix + 1, getpid());
                 sleep(sleep_time);
             } else {  // Parent Process
                 fprintf(stderr,
